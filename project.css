@@ -1,0 +1,42 @@
+*{
+    /* all reset to 0 such that my page dont get any extra margin */
+    margin:0; 
+    font-family: arial;
+    box-sizing:border-box; /*means jitni padding ek box ko mile vo size uski height and width me bhi (bhar ka count na ho)count hona chahiye*/
+    
+}
+.navbar{
+    height:60px;
+    background-color: #0f1111;
+    color:white; 
+    display:flex;/*ek line me*/
+}
+.nav-logo{
+    height:50px;
+    /* width: 100px; */
+}
+.logo{
+    background-image: url("A.png");
+    background-size: cover;
+    height:50px;
+    
+    width: 100px;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover  {
+    border: 1.5px solid white;
+     
+}
+.add-first{
+    color:#cccccc;
+    font-size: 0.85rem;
+}
+.add-sec{
+
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}

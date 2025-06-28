@@ -3,13 +3,15 @@
     margin:0; 
     font-family: arial;
     box-sizing:border-box; /*means jitni padding ek box ko mile vo size uski height and width me bhi (bhar ka count na ho)count hona chahiye*/
-    
+    color: pink;
 }
 .navbar{
     height:60px;
     background-color: #0f1111;
     color:white; 
     display:flex;/*ek line me*/
+    align-items: center; /*top se bottom centre axis m*/
+    justify-content: space-evenly;
 }
 .nav-logo{
     height:50px;
@@ -34,9 +36,62 @@
     font-size: 0.85rem;
 }
 .add-sec{
-
+    font: size 1rem;
+    margin-left: 3px;
 }
 .add-icon{
     display: flex;
-    align-items: center;
+    align-items: center; /*height wiswe thoda centre ki taraf aa jayega*/
+}
+/*box 3 search bar*/
+.nav-search{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly; /*horizontally centre*/
+    width:628px;
+    height:40px;
+    border-radius: 4px;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width:50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; /*ek hi side se curve chahiye*/
+    border:none; /**such that by default border finish ho jaye*/
+}
+.search-input{
+    width:100%; /*such that baacha hua portion sara search barr ko mil gya */
+    font-size:1rem;
+    border:none;
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items:center;/*vertically centre*/
+    font-size:1.2rem;
+    background-color: #febd68;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    color:#0f1111;
+
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+/*BOX4*/
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size:0.85rem;
+    font-weight: 700;/*thoddha darker content*/
+}
+/*Box 6 Cart*/
+.nav-cart i { /*selectors ka combination*/
+  font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
 }
